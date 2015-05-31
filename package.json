@@ -1,0 +1,41 @@
+{
+  "name": "num-sort",
+  "version": "0.0.0",
+  "description": "Sort an array of numbers",
+  "license": "MIT",
+  "repository": "sindresorhus/num-sort",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "sort",
+    "sorter",
+    "compare",
+    "comparator",
+    "num",
+    "number",
+    "numbers",
+    "order",
+    "asc",
+    "ascending",
+    "desc",
+    "descending"
+  ],
+  "dependencies": {
+    "number-is-nan": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
