@@ -1,10 +1,7 @@
-'use strict';
-var assert = require('assert');
-var test = require('ava');
-var numSort = require('./');
+import test from 'ava';
+import x from './';
 
-test(function (t) {
-	assert.deepEqual([9, 3, 24].sort(numSort.asc), [3, 9, 24]);
-	assert.deepEqual([9, 3, 24].sort(numSort.desc), [24, 9, 3]);
-	t.end();
+test(t => {
+	t.same([9, 3, 24].sort(x.asc), [3, 9, 24]);
+	t.same([9, 3, 24].sort(x.desc), [24, 9, 3]);
 });
