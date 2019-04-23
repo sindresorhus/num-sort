@@ -1,7 +1,7 @@
 import test from 'ava';
-import numSort from '.';
+import numberSort from '.';
 
 test('main', t => {
-	t.deepEqual([9, 3, 24].sort(numSort.ascending), [3, 9, 24]);
-	t.deepEqual([9, 3, 24].sort(numSort.descending), [24, 9, 3]);
+	t.deepEqual([9, 3, 24].sort(numberSort.ascending), [3, 9, 24]);
+	t.deepEqual([9, 3, 24].sort(numberSort.descending), [24, 9, 3]);
 });

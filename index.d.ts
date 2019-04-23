@@ -5,9 +5,9 @@ Ascending sort comparator.
 
 @example
 ```
-import numSort = require('num-sort');
+import numberSort = require('num-sort');
 
-[9, 3, 24].sort(numSort.ascending);
+[9, 3, 24].sort(numberSort.ascending);
 //=> [3, 9, 24]
 ```
 */
@@ -18,9 +18,9 @@ Descending sort comparator.
 
 @example
 ```
-import numSort = require('num-sort');
+import numberSort = require('num-sort');
 
-[9, 3, 24].sort(numSort.descending);
+[9, 3, 24].sort(numberSort.descending);
 //=> [24, 9, 3]
 ```
 */

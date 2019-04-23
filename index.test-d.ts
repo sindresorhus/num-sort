@@ -1,8 +1,8 @@
 import {expectType} from 'tsd';
-import numSort = require('.');
+import numberSort = require('.');
 
-expectType<number>(numSort.ascending(1, 2));
-expectType<number>(numSort.descending(1, 2));
+expectType<number>(numberSort.ascending(1, 2));
+expectType<number>(numberSort.descending(1, 2));
 
-[9, 3, 24].sort(numSort.ascending);
-[9, 3, 24].sort(numSort.descending);
+[9, 3, 24].sort(numberSort.ascending);
+[9, 3, 24].sort(numberSort.descending);

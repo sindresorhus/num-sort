@@ -13,20 +13,20 @@ $ npm install num-sort
 ## Usage
 
 ```js
-const numSort = require('num-sort');
+const numberSort = require('num-sort');
 
-[9, 3, 24].sort(numSort.ascending);
+[9, 3, 24].sort(numberSort.ascending);
 //=> [3, 9, 24]
 ```
 
 
 ## API
 
-### numSort.ascending
+### numberSort.ascending
 
 Ascending sort comparator.
 
-### numSort.descending
+### numberSort.descending
 
 Descending sort comparator.
 
