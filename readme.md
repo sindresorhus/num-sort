@@ -6,29 +6,29 @@
 ## Install
 
 ```
-$ npm install --save num-sort
+$ npm install num-sort
 ```
 
 
 ## Usage
 
 ```js
-var numSort = require('num-sort');
+const numSort = require('num-sort');
 
-[9, 3, 24].sort(numSort.asc);
+[9, 3, 24].sort(numSort.ascending);
 //=> [3, 9, 24]
 ```
 
 
 ## API
 
-### numSort.asc
+### numSort.ascending
 
-Ascending sort.
+Ascending sort comparator.
 
-### numSort.desc
+### numSort.descending
 
-Descending sort.
+Descending sort comparator.
 
 
 ## Related
@@ -38,4 +38,4 @@ Descending sort.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
