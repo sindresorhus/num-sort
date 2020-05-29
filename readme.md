@@ -15,11 +15,8 @@ $ npm install num-sort
 ```js
 const numberSort = require('num-sort');
 
-[9, 3, 24].sort(numberSort.ascending);
-//=> [3, 9, 24]
-
-[1, -1, -Infinity, NaN].sort(numberSort.ascending);
-//=> [NaN, -Infinity, -1, 1]
+[9, -3, -Infinity, 24, NaN].sort(numberSort.ascending);
+//=> [NaN, -Infinity, -3, 9, 24]
 ```
 
 

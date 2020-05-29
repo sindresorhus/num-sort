@@ -7,6 +7,9 @@ function assertNumber(number) {
 }
 
 exports.ascending = (left, right) => {
+	assertNumber(left);
+	assertNumber(right);
+
 	if (Number.isNaN(left)) {
 		return -1;
 	}
@@ -14,14 +17,14 @@ exports.ascending = (left, right) => {
 	if (Number.isNaN(right)) {
 		return 1;
 	}
-
-	assertNumber(left);
-	assertNumber(right);
 
 	return left - right;
 };
 
 exports.descending = (left, right) => {
+	assertNumber(left);
+	assertNumber(right);
+
 	if (Number.isNaN(left)) {
 		return 1;
 	}
@@ -29,9 +32,6 @@ exports.descending = (left, right) => {
 	if (Number.isNaN(right)) {
 		return -1;
 	}
-
-	assertNumber(left);
-	assertNumber(right);
 
 	return right - left;
 };
