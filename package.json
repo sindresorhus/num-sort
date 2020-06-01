@@ -4,10 +4,11 @@
 	"description": "Sort an array of numbers",
 	"license": "MIT",
 	"repository": "sindresorhus/num-sort",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=8"

@@ -1,14 +1,12 @@
-# num-sort [![Build Status](https://travis-ci.org/sindresorhus/num-sort.svg?branch=master)](https://travis-ci.org/sindresorhus/num-sort)
+# num-sort [![Build Status](https://travis-ci.com/sindresorhus/num-sort.svg?branch=master)](https://travis-ci.com/github/sindresorhus/num-sort)
 
 > Sort an array of numbers
-
 
 ## Install
 
 ```
 $ npm install num-sort
 ```
-
 
 ## Usage
 
@@ -18,7 +16,6 @@ const numberSort = require('num-sort');
 [9, -3, -Infinity, 24, NaN].sort(numberSort.ascending);
 //=> [NaN, -Infinity, -3, 9, 24]
 ```
-
 
 ## API
 
@@ -30,12 +27,7 @@ Ascending sort comparator.
 
 Descending sort comparator.
 
-
 ## Related
 
 - [alpha-sort](https://github.com/sindresorhus/alpha-sort) - Alphabetically sort an array of strings
 
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
