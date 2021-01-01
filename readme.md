@@ -1,4 +1,4 @@
-# num-sort [![Build Status](https://travis-ci.com/sindresorhus/num-sort.svg?branch=master)](https://travis-ci.com/github/sindresorhus/num-sort)
+# num-sort
 
 > Sort an array of numbers
 
