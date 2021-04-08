@@ -1,12 +1,10 @@
-'use strict';
-
 function assertNumber(number) {
 	if (typeof number !== 'number') {
 		throw new TypeError('Expected a number');
 	}
 }
 
-exports.ascending = (left, right) => {
+export function numberSortAscending(left, right) {
 	assertNumber(left);
 	assertNumber(right);
 
@@ -19,9 +17,9 @@ exports.ascending = (left, right) => {
 	}
 
 	return left - right;
-};
+}
 
-exports.descending = (left, right) => {
+export function numberSortDescending(left, right) {
 	assertNumber(left);
 	assertNumber(right);
 
@@ -34,4 +32,4 @@ exports.descending = (left, right) => {
 	}
 
 	return right - left;
-};
+}

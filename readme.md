@@ -11,19 +11,19 @@ $ npm install num-sort
 ## Usage
 
 ```js
-const numberSort = require('num-sort');
+import {numberSortAscending} from 'num-sort';
 
-[9, -3, -Infinity, 24, NaN].sort(numberSort.ascending);
+[9, -3, -Infinity, 24, NaN].sort(numberSortAscending);
 //=> [NaN, -Infinity, -3, 9, 24]
 ```
 
 ## API
 
-### numberSort.ascending
+### numberSortAscending
 
 Ascending sort comparator.
 
-### numberSort.descending
+### numberSortDescending
 
 Descending sort comparator.
 

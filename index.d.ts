@@ -1,27 +1,25 @@
-export type NumberComparator = (left: number, right: number) => number;
-
 /**
 Ascending sort comparator.
 
 @example
 ```
-import numberSort = require('num-sort');
+import {numberSortAscending} from 'num-sort';
 
-[9, -3, -Infinity, 24, NaN].sort(numberSort.ascending);
+[9, -3, -Infinity, 24, NaN].sort(numberSortAscending);
 //=> [NaN, -Infinity, -3, 9, 24]
 ```
 */
-export const ascending: NumberComparator;
+export function numberSortAscending(left: number, right: number): number;
 
 /**
 Descending sort comparator.
 
 @example
 ```
-import numberSort = require('num-sort');
+import {numberSortDescending} from 'num-sort';
 
-[9, -3, -Infinity, 24, NaN].sort(numberSort.descending);
+[9, -3, -Infinity, 24, NaN].sort(numberSortDescending);
 //=> [24, 9, -3, -Infinity, NaN]
 ```
 */
-export const descending: NumberComparator;
+export function numberSortDescending(left: number, right: number): number;
