@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install num-sort
+```sh
+npm install num-sort
 ```
 
 ## Usage
