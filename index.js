@@ -1,12 +1,12 @@
-function assertNumber(number) {
-	if (typeof number !== 'number') {
-		throw new TypeError('Expected a number');
+function assertNumberOrBigInt(value) {
+	if (typeof value !== 'number' && typeof value !== 'bigint') {
+		throw new TypeError('Expected a number or bigint');
 	}
 }
 
 export function numberSortAscending(left, right) {
-	assertNumber(left);
-	assertNumber(right);
+	assertNumberOrBigInt(left);
+	assertNumberOrBigInt(right);
 
 	if (Number.isNaN(left)) {
 		return -1;
@@ -16,12 +16,20 @@ export function numberSortAscending(left, right) {
 		return 1;
 	}
 
-	return left - right;
+	if (left < right) {
+		return -1;
+	}
+
+	if (left > right) {
+		return 1;
+	}
+
+	return 0;
 }
 
 export function numberSortDescending(left, right) {
-	assertNumber(left);
-	assertNumber(right);
+	assertNumberOrBigInt(left);
+	assertNumberOrBigInt(right);
 
 	if (Number.isNaN(left)) {
 		return 1;
@@ -31,5 +39,13 @@ export function numberSortDescending(left, right) {
 		return -1;
 	}
 
-	return right - left;
+	if (left > right) {
+		return -1;
+	}
+
+	if (left < right) {
+		return 1;
+	}
+
+	return 0;
 }
