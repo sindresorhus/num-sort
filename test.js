@@ -27,7 +27,7 @@ test('supports mixed numbers and BigInt', t => {
 });
 
 test('supports BigInt larger than MAX_SAFE_INTEGER', t => {
-	const bigValue = 9007199254740993n; // Larger than Number.MAX_SAFE_INTEGER
+	const bigValue = 9_007_199_254_740_993n; // Larger than Number.MAX_SAFE_INTEGER
 	t.deepEqual([bigValue, 0n, -bigValue, 1n].sort(numberSortAscending), [-bigValue, 0n, 1n, bigValue]);
 	t.deepEqual([bigValue, 0n, -bigValue, 1n].sort(numberSortDescending), [bigValue, 1n, 0n, -bigValue]);
 });
@@ -92,7 +92,7 @@ test('comparator returns only valid values', t => {
 		[Number.POSITIVE_INFINITY, 1],
 		[1, Number.POSITIVE_INFINITY],
 		[Number.NEGATIVE_INFINITY, 1],
-		[1, Number.NEGATIVE_INFINITY]
+		[1, Number.NEGATIVE_INFINITY],
 	];
 
 	for (const [a, b] of testCases) {
